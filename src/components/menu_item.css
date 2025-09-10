@@ -1,0 +1,19 @@
+
+.menu_item {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu_item:hover .icon {
+  opacity: 1;
+  visibility: visible;
+}

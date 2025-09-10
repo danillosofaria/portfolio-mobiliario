@@ -1,16 +1,38 @@
-import React from "react";
+import "./navbar.css";
+import Menu_item from "./Menu_item";
+import { useState } from "react";
+
 function Navbar() {
-    return (
-        <nav>
-            <img src="" alt="" />
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">Sobre</a></li>
-                <li><a href="/products">Produtos</a></li>
-                <li><a href="/contact">Contato</a></li>
-            </ul>
-        </nav>
-    )
+  const [clickedIndex, setClickedIndex] = useState(null);
+
+  const links = [
+    { label: "Work", href: "/work" },
+    { label: "Studio", href: "/studio" },
+    { label: "Contact", href: "/contact" },
+  ];
+
+  return (
+    <nav>
+      <div className="caixa-logo">
+        <a className="logo-type" href="/">Danillo Faria</a>
+      </div>
+
+      <div className="main-menu">
+        <ul>
+          {links.map((item, index) => (
+            <li key={item.href}>
+              <Menu_item
+                label={item.label}
+                href={item.href}
+                clicked={clickedIndex === index}
+                onClick={() => setClickedIndex(index)}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;
