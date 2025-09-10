@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
-import WorkPage from "./pages/WorkPage";
 import StudioPage from "./pages/StudioPage";
 import ContactPage from "./pages/ContactPage";
+import WorkPage from "./pages/WorkPage";
 
 function App() {
   return (

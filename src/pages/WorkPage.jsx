@@ -1,7 +1,7 @@
 function WorkPage() {
   return (
     <>
-      <div>workpage</div>
+      <div>workage</div>
     </>
   );
 }
