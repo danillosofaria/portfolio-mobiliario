@@ -1,21 +1,22 @@
 
 header {
-    max-height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    place-items: center;
+  max-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  place-items: center;
 }
 
-/* header.css */
 header div {
-  width: 100vw;
+  max-width: 100%;
+  height: auto;
   height: 100%;
   overflow: hidden;
 }
 
+
 header div img {
   width: 100%;
-  height: auto;  /* mantém proporção */
+  height: auto;
   object-fit: cover;
 }
