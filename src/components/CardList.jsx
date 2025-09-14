@@ -16,6 +16,8 @@ function CardList() {
 
       if (error) {
         setError(error.message);
+          console.log('Erro Supabase:', error);
+
       } else {
         setProducts(data);
       }
