@@ -1,0 +1,23 @@
+.CardList {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  max-width: 1330px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px;
+}
+
+/* Tablet (até 900px) → 2 colunas */
+@media (max-width: 900px) {
+  .CardList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celular (até 600px) → 1 coluna */
+@media (max-width: 600px) {
+  .CardList {
+    grid-template-columns: 1fr;
+  }
+}
