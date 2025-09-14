@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CardProduct from "./CardProduct";
-import './CardList.css'
+import { supabase } from "../supabaseClient";
+import './CardList.css';
 
 function CardList() {
   const [products, setProducts] = useState([]);
@@ -8,21 +9,23 @@ function CardList() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Erro ao buscar produtos");
-        }
-        return res.json();
-      })
-      .then((data) => {
+    async function fetchProducts() {
+      try {
+        const { data, error } = await supabase
+          .from('products')
+          .select('*');
+
+        if (error) throw error;
+
         setProducts(data);
-        setLoading(false);
-      })
-      .catch((err) => {
+      } catch (err) {
         setError(err.message);
+      } finally {
         setLoading(false);
-      });
+      }
+    }
+
+    fetchProducts();
   }, []);
 
   if (loading) return <p>Carregando produtos...</p>;
@@ -34,7 +37,7 @@ function CardList() {
         <CardProduct
           key={product.id}
           image={product.image}
-          name={product.title}
+          name={product.name}
           category={product.category}
         />
       ))}

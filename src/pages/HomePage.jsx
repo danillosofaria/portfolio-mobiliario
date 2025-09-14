@@ -12,7 +12,6 @@ function App() {
       <main className="main-home">
         <NewsSection></NewsSection>
         <CardList></CardList>
-        <CardProduct></CardProduct>
       </main>
     </>
   );
