@@ -1,8 +1,8 @@
 import "./homepage.css";
 import Header from "../components/Header";
 import NewsSection from "../components/NewsSection";
-import CardList from "../components/CardList";
 import ProductsSection from "../components/ProductsSection";
+import AboutSection from "../components/AboutSection";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <main className="main-home">
         <NewsSection></NewsSection>
         <ProductsSection></ProductsSection>
+        <AboutSection></AboutSection>
       </main>
     </>
   );
