@@ -5,7 +5,6 @@
   max-width: 1330px;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  padding: 40px;
 }
 
 /* Tablet (até 900px) → 2 colunas */

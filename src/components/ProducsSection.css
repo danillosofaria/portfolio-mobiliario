@@ -1,0 +1,22 @@
+.products-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1330px;
+    gap: 20px;
+}
+
+.header-products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-productsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    text-align: initial;
+    color: #1B33BF;
+}

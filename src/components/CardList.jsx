@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CardProduct from "./CardProduct";
 import { supabase } from "../supabaseClient";
-import './CardList.css'
+import './CardList.css';
 
 function CardList() {
   const [products, setProducts] = useState([]);
@@ -10,18 +10,19 @@ function CardList() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const { data, error } = await supabase
-        .from('products')   // nome da tabela no Supabase
-        .select('*');
+      try {
+        const { data, error } = await supabase
+          .from('products')
+          .select('*');
 
-      if (error) {
-        setError(error.message);
-          console.log('Erro Supabase:', error);
+        if (error) throw error;
 
-      } else {
         setProducts(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
     }
 
     fetchProducts();
