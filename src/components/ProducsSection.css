@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 1330px;
+    gap: 20px;
 }
 
 .header-products {
