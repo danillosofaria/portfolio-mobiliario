@@ -1,5 +1,6 @@
 import './ProducsSection.css'
 import CardList from '../components/CardList' 
+import Button_more from './Button_more'
 
 function ProductsSection () {
     return (
@@ -12,6 +13,7 @@ function ProductsSection () {
             <div>menu</div>
           </div>
           <CardList></CardList>
+          <div className='container-buttonMore-productSection'><Button_more size="sm"></Button_more></div>
         </div>
     )
 }

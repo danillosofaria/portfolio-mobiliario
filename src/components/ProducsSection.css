@@ -20,3 +20,8 @@
     text-align: initial;
     color: #1B33BF;
 }
+
+.container-buttonMore-productSection {
+    padding-right: 20px;
+    place-items: end;
+}
