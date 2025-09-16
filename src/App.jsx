@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import StudioPage from "./pages/StudioPage";
 import ContactPage from "./pages/ContactPage";
 import WorkPage from "./pages/WorkPage";
+import FooterSection from "./components/FooterSection";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <FooterSection></FooterSection>
     </>
   );
 }
