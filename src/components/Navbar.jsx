@@ -1,34 +1,18 @@
+import { Link } from "react-router";
 import "./navbar.css";
-import Menu_item from "./Menu_item";
-import { useState } from "react";
 
 function Navbar() {
-  const [clickedIndex, setClickedIndex] = useState(null);
-
-  const links = [
-    { label: "Work", href: "/work" },
-    { label: "Studio", href: "/studio" },
-    { label: "Contact", href: "/contact" },
-  ];
-
   return (
     <nav>
       <div className="caixa-logo">
-        <a className="logo-type" href="/">Danillo Faria</a>
+        <Link className="logo-type" to="/">Danillo <br></br> Faria</Link>
       </div>
 
       <div className="main-menu">
         <ul>
-          {links.map((item, index) => (
-            <li key={item.href}>
-              <Menu_item
-                label={item.label}
-                href={item.href}
-                clicked={clickedIndex === index}
-                onClick={() => setClickedIndex(index)}
-              />
-            </li>
-          ))}
+          <li><Link to="/WorkPage">Work</Link></li>
+          <li><Link to="/StudioPage">Studio</Link></li>
+          <li><Link to="/ContactPage">Contact</Link></li>
         </ul>
       </div>
     </nav>

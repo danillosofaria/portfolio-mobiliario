@@ -5,33 +5,40 @@ nav {
   justify-self: center;
   width: 100%;
   max-width: 1330px;
-  margin: 20px;
+  padding: 2rem;
+  color: #1b33bf;
 }
 
 .caixa-logo {
   display: flex;
   width: fit-content;
+  text-align: left;
   font-weight: 700;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .main-menu {
   display: flex;
   width: fit-content;
-  gap: 10px;
-  flex-direction: column;
-  list-style: none;
+  text-align: left;
 }
 
 .main-menu ul {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.5rem;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.logo-type {
-  text-transform: uppercase;
+.main-menu li a {
+  color: #1b33bf;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.main-menu li a:hover {
+  color: #f24822;
+  transform: scale(1.05); /* aumenta levemente o tamanho */
 }

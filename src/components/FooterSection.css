@@ -5,8 +5,11 @@
     width: 100%;
     color: #f24822;
     background-color: #d9d9d9;
-    gap: 4rem;
-    padding: 6rem;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .footer-content {
@@ -70,8 +73,4 @@
 
 .footer-top-button:hover {
   font-weight: 900;
-}
-
-.link-instagram {
-
 }
