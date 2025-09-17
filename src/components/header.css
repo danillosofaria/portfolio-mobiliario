@@ -1,30 +1,15 @@
-.header-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* centraliza verticalmente */
-  align-items: center;      /* alinha horizontalmente o container */
-  height: 860px;
+header {
   width: 100%;
-  padding: 24px;
+  height: 80vh;
+  display: flex;
+  min-height: 500px;
+  justify-content: center; /* mantém centralização horizontal */
+  align-items:self-start; /* alinha a imagem pelo topo */
   overflow: hidden;
-  background-image: url("../assets/imagens/editada_post_1-258.jpg");
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
 }
 
-.header-content {
+header img {
   width: 100%;
-  max-width: 1330px;  /* limita o tamanho do container */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: #d9d9d9; /* garante que o texto fique à esquerda */
-}
-
-.header-text {
-  width: 800px;
-  font-size: 6rem;
-  text-align: left;
-  margin: 0;
+  height: auto;
+  object-fit: cover; /* preenche sem distorcer */
 }
