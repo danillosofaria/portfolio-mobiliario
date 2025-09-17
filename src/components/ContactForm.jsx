@@ -15,14 +15,14 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form data submitted:", formData);
-    alert("Mensagem enviada com sucesso!");
+    alert("Form data submitted!");
     setFormData({ name: "", email: "", message: "" });
   };
 
   return (
     <section className="contact-section">
-      <h2>Contato</h2>
-      <p>Entre em contato conosco preenchendo o formulário abaixo:</p>
+      <h2>Contact</h2>
+      <p>Make contact with us_________:</p>
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
           type="text"

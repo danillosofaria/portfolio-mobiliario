@@ -1,7 +1,9 @@
+import ProductsSection from "../components/ProductsSection";
+
 function WorkPage() {
   return (
     <>
-      <div>workage</div>
+      <ProductsSection/>
     </>
   );
 }
