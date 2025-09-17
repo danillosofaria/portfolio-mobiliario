@@ -1,7 +1,7 @@
 .footer-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    place-items: center;
     width: 100%;
     color: #f24822;
     background-color: #d9d9d9;
@@ -60,17 +60,18 @@
 .footer-top-button {
   display: flex;
   flex-direction: column;
+  width: fit-content;
+  height: 6rem;
   align-items: center;
   cursor: pointer;
   text-align: center;
   padding: 1rem;
   color: #f24822;
-  font-weight: 600;
   gap: 0.5rem;
   transition: background-color 0.3s ease;
 }
 
 
 .footer-top-button:hover {
-  font-weight: 900;
+  font-weight: 700;
 }

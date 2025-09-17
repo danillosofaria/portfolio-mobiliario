@@ -10,7 +10,6 @@ function ProductsSection () {
               <h3>the essentials of design</h3>
               <h2>PRODUCTS</h2>
             </div>
-            <div>menu</div>
           </div>
           <CardList></CardList>
           <div className='container-buttonMore-productSection'><Button_more size="sm"></Button_more></div>

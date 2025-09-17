@@ -2,8 +2,10 @@ import './header.css';
 
 function Header() {
   return (
-    <header>
-      <img src="src\assets\imagens\editada_post_1-258.jpg" alt="" />
+    <header className='header-top'>
+      <div className='header-content'>
+        <h2 className='header-text'>“Every piece created carries the soul of its maker.”</h2>
+      </div>
     </header>
   );
 }

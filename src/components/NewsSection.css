@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: auto;
+  max-height: fit-content;
   color: #f0f0f0;
   background-color: #1b33bf;
   padding: 2em;
