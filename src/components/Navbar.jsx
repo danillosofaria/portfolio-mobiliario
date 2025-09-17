@@ -4,6 +4,7 @@ import "./navbar.css";
 function Navbar() {
   return (
     <nav>
+      <div className="nav-content">
       <div className="caixa-logo">
         <Link className="logo-type" to="/">Danillo <br></br> Faria</Link>
       </div>
@@ -14,6 +15,7 @@ function Navbar() {
           <li><Link to="/studio">Studio</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
+      </div>
       </div>
     </nav>
   );

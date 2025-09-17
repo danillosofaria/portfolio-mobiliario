@@ -15,16 +15,16 @@ function FooterSection() {
         <FaChevronUp size={24} color="#f24822" />
         Back to top
       </div>
-
-      <div className="footer-content">
-        <div className="footer-column-1">
+        <div className="booton-box-footer">
+          <div className="footer-content">
+            <div className="footer-column-1">
           <h3>
             designed by <br /> Danillo Faria
           </h3>
           <span>© 2025</span>
-        </div>
+            </div>
 
-        <ul className="footer-menu">
+            <ul className="footer-menu">
           <li>
             <Link to="/work">Work</Link>
           </li>
@@ -34,9 +34,9 @@ function FooterSection() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-        </ul>
+            </ul>
 
-        <div className="footer-column-3">
+            <div className="footer-column-3">
           <div>
             <h3>Address:</h3>
             <p>Rua Tardariz, 323. 4510-442, Porto - Portugal</p>
@@ -50,6 +50,7 @@ function FooterSection() {
               <FaInstagram size={24} /> Instagram
             </a>
           </div>
+            </div>
         </div>
       </div>
     </section>
