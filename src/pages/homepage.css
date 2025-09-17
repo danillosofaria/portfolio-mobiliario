@@ -26,6 +26,13 @@
   font-style: normal;
 }
 
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,16 +43,11 @@ body {
   font-family: "Mundial", sans-serif;
   letter-spacing: 0.05em;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-#root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
 }
 
 html {
@@ -78,7 +80,12 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 1, 5em;
+  font-size: 1.5em;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1em;
 }
 
 ul,
