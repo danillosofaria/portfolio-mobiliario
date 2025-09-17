@@ -1,9 +1,12 @@
 .contact-section {
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
   padding: 4rem 1rem;
-  text-align: center;
-  color: #333;
+  text-align: left;
+  color: #1B33BF;
 }
 
 .contact-section h2 {
@@ -22,14 +25,29 @@
   gap: 1rem;
 }
 
+#container-text-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .contact-form input,
 .contact-form textarea {
   padding: 1rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: none;
+  border-bottom: 1px solid #1b33bf;
   resize: none;
   width: 100%;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-family: "Mundial", sans-serif;
+  letter-spacing: 0.05em;
+  color: #1B33BF;
+  opacity: 0.7;
 }
 
 .contact-form textarea {
@@ -37,21 +55,27 @@
 }
 
 .contact-form button {
-  padding: 1rem;
+  width: fit-content;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
   font-size: 1.2rem;
-  background-color: #333;
+  background-color: #1B33BF;
   color: #fff;
   border: none;
-  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+#button-position {
+  display: flex;
+  justify-content: end;
 }
 
 .contact-form button:hover {
   background-color: #555;
 }
 
-/* Responsivo */
+
 @media (max-width: 600px) {
   .contact-section h2 {
     font-size: 2rem;
