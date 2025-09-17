@@ -1,10 +1,11 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import StudioPage from "./pages/StudioPage";
 import ContactPage from "./pages/ContactPage";
 import WorkPage from "./pages/WorkPage";
 import FooterSection from "./components/FooterSection";
+
 
 function App() {
   return (

@@ -26,13 +26,13 @@ function FooterSection() {
 
         <ul className="footer-menu">
           <li>
-            <Link to="/WorkPage">Work</Link>
+            <Link to="/work">Work</Link>
           </li>
           <li>
-            <Link to="/StudioPage">Studio</Link>
+            <Link to="/studio">Studio</Link>
           </li>
           <li>
-            <Link to="/ContactPage">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
 

@@ -10,9 +10,9 @@ function Navbar() {
 
       <div className="main-menu">
         <ul>
-          <li><Link to="/WorkPage">Work</Link></li>
-          <li><Link to="/StudioPage">Studio</Link></li>
-          <li><Link to="/ContactPage">Contact</Link></li>
+          <li><Link to="/work">Work</Link></li>
+          <li><Link to="/studio">Studio</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
     </nav>
