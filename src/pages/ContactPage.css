@@ -7,8 +7,8 @@
   height: 700px;
   padding: 1rem 0rem;
   overflow: hidden;
-  flex-direction: row; /* padrão: lado a lado */
-  gap: 2rem; /* espaço entre os itens */
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .container-contacts img {
@@ -17,15 +17,14 @@
   object-fit: cover;
 }
 
-/* Responsivo: até 768px (tablet/celular) */
 @media (max-width: 768px) {
   .container-contacts {
-    flex-direction: column; /* muda para coluna */
-    height: auto; /* altura automática */
+    flex-direction: column;
+    height: auto;
   }
 
   .container-contacts img {
     width: 100%;
-    height: auto; /* mantém proporção da imagem */
+    height: auto;
   }
 }

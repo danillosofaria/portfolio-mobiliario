@@ -34,6 +34,7 @@ nav {
 .main-menu ul {
   display: flex;
   flex-direction: column;
+  font-weight: 600;
   gap: 0.5rem;
   list-style: none;
   padding: 0;
@@ -47,5 +48,5 @@ nav {
 
 .main-menu li a:hover {
   color: #9F9F9F;
-  transform: scale(1.05); /* aumenta levemente o tamanho */
+  transform: scale(1.05);
 }
