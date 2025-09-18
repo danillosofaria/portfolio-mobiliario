@@ -21,7 +21,10 @@ function AboutSection() {
           cum quasi vel vero repellendus ut saepe repudiandae magni molestiae
           quas impedit.
         </p>
-        <Button_more variant="secondary" size="sm"></Button_more>
+        <div className="position-button-about">
+          <a href="/studio"><Button_more variant="secondary" size="sm" /></a>
+        </div>
+        
       </div>
     </section>
   );

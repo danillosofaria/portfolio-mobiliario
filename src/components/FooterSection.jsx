@@ -18,9 +18,9 @@ function FooterSection() {
         <div className="booton-box-footer">
           <div className="footer-content">
             <div className="footer-column-1">
-          <h3>
+          <span>
             designed by <br /> Danillo Faria
-          </h3>
+          </span>
           <span>© 2025</span>
             </div>
 
@@ -37,8 +37,8 @@ function FooterSection() {
             </ul>
 
             <div className="footer-column-3">
-          <div>
-            <h3>Address:</h3>
+          <div className="adress-footer">
+            <span>Address:</span>
             <p>Rua Tardariz, 323. 4510-442, Porto - Portugal</p>
           </div>
           <div className="link-instagram">

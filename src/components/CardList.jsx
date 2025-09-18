@@ -3,7 +3,7 @@ import CardProduct from "./CardProduct";
 import { supabase } from "../supabaseClient";
 import './CardList.css';
 
-function CardList() {
+function CardList({ limit }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -11,9 +11,14 @@ function CardList() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const { data, error } = await supabase
-          .from('products')
-          .select('*');
+        let query = supabase.from('products').select('*');
+
+        
+        if (limit) {
+          query = query.limit(limit);
+        }
+
+        const { data, error } = await query;
 
         if (error) throw error;
 
@@ -26,9 +31,9 @@ function CardList() {
     }
 
     fetchProducts();
-  }, []);
+  }, [limit]);
 
-  if (loading) return <p>Carregando produtos...</p>;
+  if (loading) return <p>Loading products...</p>;
   if (error) return <p>Erro: {error}</p>;
 
   return (

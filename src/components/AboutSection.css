@@ -1,7 +1,7 @@
 .about-section {
   width: 100%;
   min-height: 540px;
-  max-width: 1330px;
+  max-width: 1200px;
   box-shadow: 16px 12px 0 0 #a3a3a3;
   padding: 1.25rem;
   display: flex;
@@ -25,11 +25,16 @@
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  color: #1B33BF;
+  color: #0D0D0D;
   background-color: #d9d9d9;
   padding: 2rem;
   text-align: start;
   gap: 3rem;
+}
+
+.position-button-about {
+  display: flex;
+  justify-content: end;
 }
 
 

@@ -1,8 +1,11 @@
+import StudioAbout from "../components/StudioAbout";
+import "./StudioPage.css"
+
 function StudioPage() {
   return (
-    <>
-      <div>studiopage</div>
-    </>
+    <div className="studio-page">
+      <StudioAbout></StudioAbout>
+    </div>
   );
 }
 

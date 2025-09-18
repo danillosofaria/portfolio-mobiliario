@@ -1,10 +1,9 @@
 import './Button_more.css';
 
-function Button_more({ variant = "primary", size = "md", onClick }) {
+function Button_more({ variant = "primary", size = "md"}) {
   return (
     <button
       className={`button-more button-${variant} button-${size}`}
-      onClick={onClick}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

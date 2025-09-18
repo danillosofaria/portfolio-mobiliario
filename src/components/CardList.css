@@ -2,7 +2,7 @@
   display: grid;
   justify-content: center;
   width: 100%;
-  max-width: 1330px;
+  max-width: 1200px;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }

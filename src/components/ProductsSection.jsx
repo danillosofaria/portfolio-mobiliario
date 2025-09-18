@@ -11,8 +11,9 @@ function ProductsSection () {
               <h2>PRODUCTS</h2>
             </div>
           </div>
-          <CardList></CardList>
-          <div className='container-buttonMore-productSection'><Button_more size="sm"></Button_more></div>
+          <CardList limit={9}></CardList>
+          <div className='container-buttonMore-productSection'>
+          <a href="/work"><Button_more size="sm" /></a></div>
         </div>
     )
 }
