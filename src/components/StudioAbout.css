@@ -50,12 +50,12 @@
 
 @media (max-width: 768px) {
   .studio-about-content {
-    flex-direction: column; /* empilha imagem e texto */
+    flex-direction: column;
     height: auto;
   }
 
   .studio-about-text {
-    text-align: left;       /* texto alinhado à esquerda no mobile */
+    text-align: left;
     max-width: 100%;
   }
 

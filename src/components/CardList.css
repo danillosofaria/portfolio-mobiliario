@@ -7,14 +7,14 @@
   gap: 40px;
 }
 
-/* Tablet (até 900px) → 2 colunas */
+
 @media (max-width: 900px) {
   .CardList {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Celular (até 600px) → 1 coluna */
+
 @media (max-width: 600px) {
   .CardList {
     grid-template-columns: 1fr;

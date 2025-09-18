@@ -9,7 +9,6 @@ function StudioAbout() {
             <h3>the essentials of design</h3>
             <h2>PRODUCTS</h2>
           </div>
-
           <p>
             Oficio lenho is a studio that aims to create and produce furniture
             and copyrighted products, making use of various materials and
