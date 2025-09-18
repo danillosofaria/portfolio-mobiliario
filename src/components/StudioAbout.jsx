@@ -6,8 +6,8 @@ function StudioAbout() {
       <div className="studio-about-content">
         <div className="studio-about-text">
           <div className="title-productsSection">
-            <h3>the essentials of design</h3>
-            <h2>PRODUCTS</h2>
+            <h3>about</h3>
+            <h2>STUDIO</h2>
           </div>
           <p>
             Oficio lenho is a studio that aims to create and produce furniture
