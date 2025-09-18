@@ -5,6 +5,7 @@ import StudioPage from "./pages/StudioPage";
 import ContactPage from "./pages/ContactPage";
 import WorkPage from "./pages/WorkPage";
 import FooterSection from "./components/FooterSection";
+import "./index.css"
 
 
 function App() {

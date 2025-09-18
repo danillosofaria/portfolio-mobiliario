@@ -10,21 +10,17 @@ function AboutSection() {
           <h2>STUDIO</h2>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          animi facere incidunt dolorem aperiam, beatae minima, fuga consectetur
-          cum quasi vel vero repellendus ut saepe repudiandae magni molestiae
-          quas impedit.
-          <br />
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          animi facere incidunt dolorem aperiam, beatae minima, fuga consectetur
-          cum quasi vel vero repellendus ut saepe repudiandae magni molestiae
-          quas impedit.
+          Danillo Faria is a designer and craftsman behind Oficio Lenho, a
+          studio dedicated to creating handcrafted furniture and unique
+          products. Passionate about materials, textures, and innovative
+          joinery, Danillo designs and produces each piece manually, blending
+          originality, functionality, and high-quality craftsmanship.
         </p>
         <div className="position-button-about">
-          <a href="/studio"><Button_more variant="secondary" size="sm" /></a>
+          <a href="/studio">
+            <Button_more variant="secondary" size="sm" />
+          </a>
         </div>
-        
       </div>
     </section>
   );
