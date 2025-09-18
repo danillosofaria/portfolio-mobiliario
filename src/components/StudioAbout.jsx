@@ -36,7 +36,7 @@ function StudioAbout() {
             with the Panapaná Table.
           </p>
         </div>
-        <img src="src\assets\imagens\tipi_escora_paufurado.webp" alt="" />
+        <img src="/public/tipi_escora_paufurado.webp" alt="" />
       </div>
     </section>
   );

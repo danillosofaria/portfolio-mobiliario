@@ -4,7 +4,7 @@ import "./ContactPage.css"
 function ContactPage() {
   return (
     <div className="container-contacts">
-      <img src="src\assets\imagens\hoop_estudio.webp" alt="" />
+      <img src="/public/tipi_escora_paufurado.webp" alt="" />
       <ContactForm />
     </div>
   );
