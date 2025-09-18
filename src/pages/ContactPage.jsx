@@ -4,7 +4,7 @@ import "./ContactPage.css"
 function ContactPage() {
   return (
     <div className="container-contacts">
-      <img src="/public/tipi_escora_paufurado.webp" alt="" />
+      <img src="/tipi_escora_paufurado.webp" alt="" />
       <ContactForm />
     </div>
   );
