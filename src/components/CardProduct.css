@@ -25,7 +25,8 @@
   left: 0;
   width: 100%;
   background-color: #ffffff75;
-  color: #0D0D0D;
+  border-bottom: 1px solid #1B33BF;
+  color: #1B33BF;
   padding: 1rem 2rem;
   box-sizing: border-box;
   transform: translateY(100%);
